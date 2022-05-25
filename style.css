@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+h1 {
+  font-size: 60px;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+h1:hover {
+  color: #088178;
+  border-bottom: solid 1px #ffffff;
+}
+h2 {
+  font-size: 50px;
+  color: #088178;
+  margin: 10px;
+}
+h4 {
+  font-size: 30px;
+  color: #088178;
+}
+span {
+  color: red;
+  font-size: 26px;
+}
+citation {
+  font-size: 40px;
+  color: #088178;
+  font-weight: bold;
+}
+h5 {
+  font-size: 20px;
+  color: black;
+}
+h6 {
+  font-size: 40px;
+  text-align: center;
+  color: black;
+  font-size: bold;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: underline;
+}
+p {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: lightgray;
+}
+header {
+  position: sticky;
+  top: 0px;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  border-bottom: solid 1px #ffffff;
+}
+#navbar li a:hover {
+  color: #088178;
+}
+#velo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url("img/bicycle_fond_decran.jpg");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  /* background-position: cover; */
+  padding: 80px 80px;
+  margin: auto;
+}
+#produits {
+  text-align: center;
+}
+#produits .tendance {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+#produits .article-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+.section-produit {
+  padding: 40px 80px;
+}
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: lightgray;
+}
+
+#adresse {
+  text-align: center;
+  text-transform: uppercase;
+}
+#urbain {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+}
+#div1 #urbain {
+  width: 300px;
+  border: 10px burlywood double;
+  box-shadow: 3px 3px 10px black;
+}
+main {
+  width: 80vw;
+  margin: 100px auto;
+  background-color: lightgrey;
+  padding: 50px;
+}
+.formulaire {
+  width: 50%;
+  /* donner une largeur est important pour pouvoir ensuite centrer */
+  margin: 0 auto;
+  /* pour centrer */
+  /* je crée une marge de 10% par rapport aux élément plus en haut */
+  background-color: white;
+  padding: 1%;
+  /* je crée un espace équivalent à 1% pour tous les élement de mon bloc, par rapport aux limites de ce même bloc */
+}
+input,
+select,
+textarea {
+  background-color: #088178;
+  color: white;
+  font-size: large;
+  width: 80%;
+  margin-bottom: 2%;
+}
+.clock {
+  border-radius: 50%;
+  background: url("../img/clock.png") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 150px;
+  width: 150px;
+  padding-bottom: 30%;
+  position: relative;
+}
+
+.h-container,
+.m-container,
+.s-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hours {
+  background: black;
+  height: 7%;
+  width: 2%;
+  left: 49%;
+  top: 43%;
+  position: absolute;
+}
+
+.minutes {
+  background: black;
+  height: 7%;
+  width: 2%;
+  left: 49%;
+  top: 43%;
+  position: absolute;
+}
+
+.seconds {
+  background: black;
+  height: 7%;
+  width: 2%;
+  left: 49%;
+  top: 43%;
+  position: absolute;
+}
+
+.h-container {
+  /* animation: animation12 42300s infinite linear; */
+  animation: animation12 10s infinite linear;
+}
+
+.m-container {
+  /* animation: animation12 3600s infinite linear; */
+  animation: animation12 5s infinite linear;
+}
+
+.s-container {
+  /* animation: animation12 60s infinite linear; */
+  animation: animation12 1s infinite linear;
+}
+
+@keyframes animation12 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animation {
+  margin: 50px 0 200px 0;
+}
+#oclock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
